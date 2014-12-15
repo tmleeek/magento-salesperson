@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Codeproper_Salesperson>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Codeproper_Salesperson>
+    </modules>
+</config>

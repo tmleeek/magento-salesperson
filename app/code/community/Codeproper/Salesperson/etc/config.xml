@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Codeproper_Salesperson>
+            <version>1.0.0</version>
+        </Codeproper_Salesperson>
+    </modules>
+
+    <global>
+        <helpers>
+            <Codeproper_Salesperson>
+                <class>Codeproper_Salesperson_Helper</class>
+            </Codeproper_Salesperson>
+        </helpers>
+
+        <resources>
+            <codeproper_salesperson_setup>
+                <setup>
+                    <module>Codeproper_Salesperson</module>
+                    <class>Codeproper_Salesperson_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </codeproper_salesperson_setup>
+            <codeproper_salesperson_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </codeproper_salesperson_write>
+            <codeproper_salesperson_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </codeproper_salesperson_read>
+        </resources>
+    </global>
+
+    <adminhtml>
+        <events>
+            <sales_order_place_before>
+                <observers>
+                    <add_event>
+                        <type>singleton</type>
+                        <class>Codeproper_Salesperson_Model_Observer</class>
+                        <method>salesOrderPlaceBefore</method>
+                    </add_event>
+                </observers>
+            </sales_order_place_before>
+        </events>
+    </adminhtml>
+</config>
