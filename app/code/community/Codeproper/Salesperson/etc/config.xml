@@ -13,6 +13,12 @@
             </codeproper_salesperson>
         </helpers>
 
+        <blocks>
+            <codeproper_salesperson>
+                <class>Codeproper_Salesperson_Block</class>
+            </codeproper_salesperson>
+        </blocks>
+
         <resources>
             <codeproper_salesperson_setup>
                 <setup>
@@ -37,6 +43,13 @@
     </global>
 
     <adminhtml>
+        <layout>
+            <updates>
+                <codeproper_salesperson>
+                    <file>codeproper_salesperson.xml</file>
+                </codeproper_salesperson>
+            </updates>
+        </layout>
         <events>
             <sales_order_place_before>
                 <observers>

@@ -1,3 +1,7 @@
 app/code/community/Codeproper/Salesperson/*         app/code/community/Codeproper/Salesperson/
 
 app/etc/modules/Codeproper_Salesperson.xml          app/etc/modules/Codeproper_Salesperson.xml
+
+app/design/adminhtml/base/default/layout/codeproper_salesperson.xml        app/design/adminhtml/base/default/layout/codeproper_salesperson.xml
+
+app/design/adminhtml/base/default/template/codeproper/salesperson/*        app/design/adminhtml/base/default/template/codeproper/salesperson/

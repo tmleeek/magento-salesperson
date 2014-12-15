@@ -1,0 +1,16 @@
+<?php
+$order = $this->getOrder();
+?>
+
+<?php if ($order->getSalespersonId()): ?>
+
+  <p>
+    Salesperson ID: <?php echo $order->getSalespersonId(); ?><br />
+    Salesperson Name: <?php echo $order->getSalespersonName(); ?>
+  </p>
+
+<?php else: ?>
+
+  <p>This order is not an admin order, or it was created before the Salesperson module was installed.</p>
+
+<?php endif; ?>
