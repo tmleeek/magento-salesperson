@@ -8,9 +8,9 @@
 
     <global>
         <helpers>
-            <Codeproper_Salesperson>
+            <codeproper_salesperson>
                 <class>Codeproper_Salesperson_Helper</class>
-            </Codeproper_Salesperson>
+            </codeproper_salesperson>
         </helpers>
 
         <resources>
